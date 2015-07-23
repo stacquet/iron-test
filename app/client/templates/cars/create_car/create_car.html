@@ -1,4 +1,16 @@
 <template name="CreateCar">
   <h1>Create New Car</h1>
-  {{> quickForm collection="Cars" id="insertCarForm" type="insert" buttonContent="Create"}}
+  <!-- {{> quickForm collection="Cars" id="insertCarForm" type="insert" buttonContent="Create"}} -->
+  <div class="form-group">
+	  <div class="alert alert-warning alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					Commencez à entrer votre adresse dans la barre d'adresse
+	  </div>
+	<label for="mobile" class="col-xs-2 control-label ">Adresse postale</label>
+	  <div class="input-group col-xs-8">
+			<input id="pac-input" name="place" type="text" class="form-control"  required autofocus />
+		</div>
+	</div>
+  <div id="map">
+  </div>
 </template>
