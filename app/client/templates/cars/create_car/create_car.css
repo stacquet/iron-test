@@ -3,3 +3,10 @@
 /*****************************************************************************/
 .create-car {
 }
+
+#map { 
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
